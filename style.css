@@ -1,0 +1,136 @@
+:root {
+    --nexxen-dark-blue: #1B1464;
+    --nexxen-light-blue: #00A8E8;
+}
+
+.bg-nexxen-dark { 
+    background-color: var(--nexxen-dark-blue); 
+}
+
+.bg-nexxen-light { 
+    background-color: var(--nexxen-light-blue); 
+}
+
+.text-nexxen-dark { 
+    color: var(--nexxen-dark-blue); 
+}
+
+.text-nexxen-light { 
+    color: var(--nexxen-light-blue); 
+}
+
+.hover\:text-nexxen-light:hover { 
+    color: var(--nexxen-light-blue); 
+}
+
+.border-nexxen-light { 
+    border-color: var(--nexxen-light-blue); 
+}
+
+/* Responsive Navigation */
+@media (max-width: 768px) {
+    .mobile-menu {
+        display: none;
+    }
+
+    .mobile-menu.active {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 64px;
+        left: 0;
+        right: 0;
+        background: white;
+        padding: 1rem;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    }
+
+    .mobile-menu.active a {
+        padding: 0.75rem 0;
+    }
+
+    .menu-button {
+        display: block;
+    }
+}
+
+/* Responsive Typography */
+@media (max-width: 640px) {
+    h1 {
+        font-size: 1.875rem !important;
+    }
+
+    h2 {
+        font-size: 1.5rem !important;
+    }
+
+    h3 {
+        font-size: 1.25rem !important;
+    }
+
+    p {
+        font-size: 1rem !important;
+    }
+}
+
+/* Responsive Spacing */
+@media (max-width: 768px) {
+    section {
+        padding-top: 2rem !important;
+        padding-bottom: 2rem !important;
+    }
+
+    .py-20 {
+        padding-top: 3rem !important;
+        padding-bottom: 3rem !important;
+    }
+}
+
+/* Responsive Grid Layouts */
+@media (max-width: 640px) {
+    .grid {
+        grid-template-columns: 1fr !important;
+    }
+
+    .gap-8 {
+        gap: 1.5rem !important;
+    }
+}
+
+/* Add sticky header styles */
+.sticky-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 50;
+    background-color: white;
+    transition: all 0.3s ease;
+}
+
+/* Add padding to body to prevent content from hiding under sticky header */
+body {
+    padding-top: 64px; /* Same as header height */
+}
+
+/* Adjust mobile menu position for sticky header */
+@media (max-width: 768px) {
+    .mobile-menu.active {
+        position: fixed;
+        top: 64px;
+        left: 0;
+        right: 0;
+        z-index: 40;
+    }
+}
+
+/* Add scroll margin for sections to account for sticky header */
+section[id],
+div[id] {
+    scroll-margin-top: 36px; /* Slightly larger than header height to add some breathing room */
+}
+
+/* Smooth scrolling for better user experience */
+html {
+    scroll-behavior: smooth;
+}

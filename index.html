@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexxen International - Leading AdTech Solutions</title>
+    
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+    <link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#1B1464">
+    <meta name="msapplication-TileColor" content="#1B1464">
+    <meta name="theme-color" content="#1B1464">
+    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="sticky-header shadow-lg">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <div class="elementor-image">
+                        <a href="https://nexxen.com">
+                            <img 
+                                width="200"
+                                height="35"
+                                src="https://nexxen.com/wp-content/uploads/2023/07/logo.png"
+                                class="attachment-full size-full wp-image-7" 
+                                alt="Nexxen Logo"
+                                srcset="https://nexxen.com/wp-content/uploads/2023/07/logo.png 304w, https://nexxen.com/wp-content/uploads/2023/07/logo-300x53.png 300w"
+                                sizes="(max-width: 200px) 100vw, 200px"
+                            >
+                        </a>
+                    </div>
+                </div>
+                <!-- Mobile menu button -->
+                <button class="menu-button md:hidden flex items-center px-3 py-2" onclick="toggleMenu()">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+                <!-- Desktop menu -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#about" class="text-nexxen-dark hover:text-nexxen-light">About</a>
+                    <a href="#product" class="text-nexxen-dark hover:text-nexxen-light">Product</a>
+                    <a href="#role" class="text-nexxen-dark hover:text-nexxen-light">Career</a>
+                    <a href="#interview" class="text-nexxen-dark hover:text-nexxen-light">Interview Guide</a>
+                </div>
+                <!-- Mobile menu -->
+                <div class="mobile-menu md:hidden">
+                    <a href="#about" class="block text-nexxen-dark hover:text-nexxen-light">About</a>
+                    <a href="#product" class="block text-nexxen-dark hover:text-nexxen-light">Product</a>
+                    <a href="#role" class="block text-nexxen-dark hover:text-nexxen-light">Career</a>
+                    <a href="#interview" class="block text-nexxen-dark hover:text-nexxen-light">Interview Guide</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="bg-nexxen-dark text-white py-20">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <h1 class="text-4xl font-bold mb-4">Shape the Future of Digital Advertising</h1>
+            <p class="text-xl">Join Nexxen's innovative team in revolutionizing AdTech solutions</p>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-8 text-nexxen-dark">About Nexxen</h2>
+            <div class="prose lg:prose-xl">
+                <p class="text-gray-600">We are a leading AdTech company at the forefront of digital advertising, helping global brands optimize their marketing strategies and reach their audiences at scale. Our innovative platform empowers advertisers to make data-driven decisions and achieve outstanding campaign results. As we continue to grow, we're looking for passionate individuals to join our talented team and contribute to shaping the future of digital advertising.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Section -->
+    <section id="product" class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-8 text-nexxen-dark">Demand-Side Platform (DSP)</h2>
+            <div class="mb-8">
+                <p class="text-gray-600">Our Demand-Side Platform (DSP) is a powerful, data-driven platform designed to help advertisers efficiently purchase and manage digital ad inventory across multiple channels. The platform provides real-time analytics, audience segmentation, and performance optimization, enabling advertisers to target the right audiences with the right messages at scale.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md border-t-4 border-nexxen-light">
+                    <h3 class="text-xl font-semibold mb-4 text-nexxen-dark">Data Processing</h3>
+                    <p>Advanced data processing capabilities for precise targeting and optimization</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md border-t-4 border-nexxen-light">
+                    <h3 class="text-xl font-semibold mb-4 text-nexxen-dark">Real-time Analytics</h3>
+                    <p>Comprehensive analytics for informed decision-making and campaign optimization</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md border-t-4 border-nexxen-light">
+                    <h3 class="text-xl font-semibold mb-4 text-nexxen-dark">Performance Optimization</h3>
+                    <p>Data-driven optimization to maximize ROI across all campaigns</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Role Section -->
+    <section id="role" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-8 text-nexxen-dark">Senior Backend Engineer</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div>
+                    <h3 class="text-xl font-semibold mb-4 text-nexxen-dark">Technologies</h3>
+                    <div class="space-y-4">
+                        <div>
+                            <h4 class="font-semibold mb-2">Backend</h4>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-nexxen-light text-white px-3 py-1 rounded">Java</span>
+                                <span class="bg-nexxen-light text-white px-3 py-1 rounded">gRPC</span>
+                                <span class="bg-nexxen-light text-white px-3 py-1 rounded">Kafka</span>
+                                <span class="bg-nexxen-light text-white px-3 py-1 rounded">Spring Boot</span>
+                            </div>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold mb-2">Databases</h4>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-nexxen-light text-white px-3 py-1 rounded">Oracle DB</span>
+                                <span class="bg-nexxen-light text-white px-3 py-1 rounded">MongoDB</span>
+                                <span class="bg-nexxen-light text-white px-3 py-1 rounded">Vertica</span>
+                                <span class="bg-nexxen-light text-white px-3 py-1 rounded">Druid</span>
+                            </div>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold mb-2">Infrastructure</h4>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-nexxen-light text-white px-3 py-1 rounded">AWS</span>
+                                <span class="bg-nexxen-light text-white px-3 py-1 rounded">On-prem</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-4 text-nexxen-dark">Key Responsibilities</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <span class="text-nexxen-light mr-2">•</span>
+                            Work closely with product managers, engineers and data scientists to implement advanced features
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-nexxen-light mr-2">•</span>
+                            Contribute to architectural decisions and drive development of new platform features
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-nexxen-light mr-2">•</span>
+                            Design and develop scalable backend systems for large-scale data processing
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-nexxen-light mr-2">•</span>
+                            Ensure high availability, scalability, and performance across environments
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interview Guide Section -->
+    <section id="interview" class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-8 text-nexxen-dark">Interview Preparation</h2>
+            <div class="bg-white p-8 rounded-lg shadow-md">
+                <div class="mb-8">
+                    <h3 class="text-xl font-semibold mb-4 text-nexxen-dark">What to Expect</h3>
+                    <p class="text-gray-600">The interview will be a friendly, conversational session designed to get to know you better both personally and professionally. We aim to understand your background, problem-solving approach, and technical knowledge.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-gray-50 p-6 rounded-lg">
+                        <h4 class="font-semibold text-nexxen-dark mb-3">Personal & Professional Background</h4>
+                        <p class="text-gray-600">Discussion of experiences, goals, and past challenge approaches</p>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-lg">
+                        <h4 class="font-semibold text-nexxen-dark mb-3">Technical Knowledge</h4>
+                        <p class="text-gray-600">General software engineering questions with focus on backend development</p>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-lg">
+                        <h4 class="font-semibold text-nexxen-dark mb-3">Architecture & Design</h4>
+                        <p class="text-gray-600">System design discussions with whiteboarding exercises</p>
+                    </div>
+                </div>
+                <div class="mt-8 p-4 bg-gray-50 rounded-lg">
+                    <p class="text-gray-600"><strong>Duration:</strong> 30-60 minutes</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-nexxen-dark text-white py-8">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <p>© 2024 Nexxen International. All rights reserved.</p>
+            <p class="mt-2">
+                <a href="https://www.nexxen.com" class="text-nexxen-light hover:text-white">www.nexxen.com</a>
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const mobileMenu = document.querySelector('.mobile-menu');
+            mobileMenu.classList.toggle('active');
+        }
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.querySelector('.mobile-menu').classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html>
