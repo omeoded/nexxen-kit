@@ -134,3 +134,63 @@ div[id] {
 html {
     scroll-behavior: smooth;
 }
+
+/* Dropdown menu styles */
+.group {
+    position: relative;
+    height: 100%; /* Match height of other nav items */
+    display: flex;
+    align-items: center;
+    padding-bottom: 0; /* Remove bottom padding */
+}
+
+/* Update button styling */
+.group > button {
+    margin-bottom: 0; /* Remove margin */
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+/* Update dropdown container positioning */
+.group > div {
+    top: 100%;
+    margin-top: 0; /* Remove negative margin */
+}
+
+/* Update hover area */
+.group::after {
+    content: '';
+    position: absolute;
+    height: 10px; /* Reduce height of hover area */
+    left: 0;
+    right: 0;
+    bottom: -10px;
+    background: transparent;
+}
+
+/* Keep other dropdown styles the same */
+.group-hover\:block {
+    transition: all 0.2s ease-out;
+}
+
+.group:hover .group-hover\:block,
+.group-hover\:block:hover {
+    display: block;
+}
+
+.absolute {
+    position: absolute;
+    z-index: 50;
+    min-width: 200px;
+    transform-origin: top center;
+    transition: transform 0.2s ease-out, opacity 0.2s ease-out;
+}
+
+/* Mobile menu adjustments */
+@media (max-width: 768px) {
+    .mobile-menu.active {
+        max-height: 100vh;
+        overflow-y: auto;
+    }
+}
