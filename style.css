@@ -142,3 +142,38 @@ html {
         overflow-y: auto;
     }
 }
+
+/* Add these styles to maintain consistency */
+.text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+/* Ensure consistent card styling */
+.bg-white.p-6.rounded-lg {
+    transition: transform 0.2s ease-in-out;
+}
+
+.bg-white.p-6.rounded-lg:hover {
+    transform: translateY(-2px);
+}
+
+/* Adjust spacing for better hierarchy */
+.mb-16 {
+    margin-bottom: 4rem;
+}
+
+.mb-6 {
+    margin-bottom: 1.5rem;
+}
+
+/* Ensure consistent text styling */
+.prose p {
+    margin-top: 1.25em;
+    margin-bottom: 1.25em;
+}
+
+.prose strong {
+    color: var(--nexxen-dark-blue);
+    font-weight: 600;
+}
